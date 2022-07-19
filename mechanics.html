@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/x-icon" href="images/jblock.ico" />
+
+<title>Mechanics - All About Tetris</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="navbar-brand">ALL ABOUT TETRIS</a>
+        <a href="music.html">Music</a>
+        <a href="tips_tricks.html">Tips and Tricks</a>
+        <a class="active" href="mechanics.html">Mechanics</a>
+        <a href="games.html">Games</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <h1 class="green">Mechanics</h1>
+    <p align="center"><i>Note:</i> Before 2009, nearly every Tetris scoring system varied from the other. 
+        We'll be using the standard scoring system used after 2009.</p>
+    
+    <table id="scoring" align="center" border="1">
+        <tbody>
+            <tr>
+                <th>Action</th>
+                <th>Point Value</th>
+            </tr>
+            <tr>
+                <td>Single/Mini T-Spin</td>
+                <td>100 × Level</td>
+            </tr>
+            <tr>
+                <td>Mini T-Spin Single</td>
+                <td>200 × Level</td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>300 × Level</td>
+            </tr>
+            <tr>
+                <td>T-Spin/Mini T-Spin Double</td>
+                <td>400 × Level</td>
+            </tr>
+            <tr>
+                <td>Triple</td>
+                <td>500 × Level</td>
+            </tr>
+            <tr>
+                <td>B2B (Back-to-Back) Mini T-Spin Double</td>
+                <td>600 × Level</td>
+            </tr>
+            <tr>
+                <td>Tetris/T-Spin Single</td>
+                <td>800 × Level</td>
+            </tr>
+            <tr>
+                <td>B2B T-Spin Single/B2B Tetris/T-Spin Double</td>
+                <td>1200 × Level</td>
+            </tr>
+            <tr>
+                <td>T-Spin Triple</td>
+                <td>1600 × Level</td>
+            </tr>
+            <tr>
+                <td>B2B T-Spin Double</td>
+                <td>1800 × Level</td>
+            </tr>
+            <tr>
+                <td>B2B T-Spin Triple</td>
+                <td>2400 × Level</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr />
+
+    <h2>Controls</h2>
+    <p class="info">
+        &emsp;&emsp; On console and handheld versions, Tetris made fine use of the D-Pad as players could only move left, right, or down 
+        (to increase the falling speed). Two other buttons are used for rotating left and right. 
+        Versions released since the 90s have a hold button which allows players to hold a single piece for later.
+        <figure>
+            <img src=".gif/hold.gif" />
+            <figcaption>The HOLD mechanic - on PC, the default button is usually 'C'</figcaption>
+        </figure>
+        
+    </p>
+    <br>
+    <h2>Rotation</h2>
+    <p class="info">
+        &emsp;&emsp;Older versions of Tetris such as the GameBoy and NES versions use the 
+        <a href="https://harddrop.com/wiki/Nintendo_Rotation_System#:~:text=The%20Nintendo%20Rotation%20System%2C%20or,highest%20block%20on%20row%2020.">Nintendo Rotation System.</a>
+        The NRS is the first rotation system created, with a left- and right-hand rotation system. A prime comparison of this can be
+        seen from the two versions mentioned above.
+
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="images/lrs.png" />
+                    <p style="font-size:15px">Left-hand Rotation (GameBoy)</p>
+                </td>
+                <td>
+                    <img src="images/rrs.png" />
+                    <p style="font-size:15px" align="center">Right-hand Rotation (NES)</p>
+                </td>
+            </tr>
+        </table>
+    </p>
+
+    <p class="info">
+        &emsp;&emsp;Newer versions have the <a href="https://tetris.wiki/Super_Rotation_System">Super Rotation System (SRS)</a>. Core mechanics were introduced that made the game
+        more fluid and forgiving to play. 
+        
+        <div class="mechanics">
+            <ul>
+                <li>
+                    <hr />
+                    <strong>Lock Delay</strong>
+                    <p>When at the very bottom or touching a piece, there period where the piece may be moved before locking
+                        was significantly increased.
+                    </p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <img src=".gif/lock-delay.gif" width="50%"/>
+                                <p>Lock Delay with SRS</p>
+                            </td>
+                            <td>
+                                <img src=".gif/lock-delay-nes.gif" />
+                                <p>No Lock Delay (NRS)</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+    
+                <li>
+                    <hr />
+                    <strong>Wall Kick</strong>
+                    <p>If a piece slides along a wall, even without enough room, the game will make enough space so that the
+                        piece will rotate.
+                    </p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <img src=".gif/wall-kick.gif" width="70%" />
+                                <p>Wall Kick</p>
+                            </td>
+                            <td>
+                                <img src=".gif/no-wall-kick.gif" />
+                                <p style="font-size: 15px">No Wall Kick (I swear I'm mashing the buttons!)</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+    
+                <li>
+                    <hr />
+                    <strong>Hard Drop</strong>
+                    <p>
+                        Instead of holding down to quicken the falling speed of a piece, it can be immediately dropped into a spot.
+                        (Usually UP on the D-Pad.)
+                    </p>
+                    <img src=".gif/hard-drop.gif" width="15%"/>
+                </li>
+    
+                <li>
+                    <hr />
+                    <strong>Ghost Piece</strong>
+                    <p>A shadow of where the piece will drop appears.</p>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <img src="images/ghost.png" width="84%"/>
+                                <p>Ghost Piece</p>
+                            </td>
+                            <td>
+                                <img src="images/no-ghost.png" />
+                                <p>No Ghost Piece</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        
+
+    </p>
+
+
+    <hr />
+    <a href="#top" class="top" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Jump to top</a>
+
+</body>
+
+</html>
