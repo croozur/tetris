@@ -11,18 +11,122 @@
 </head>
 
 <body>
+
+    <script src="dropdown.js"></script>
+
     <div class="topnav">
-        <a class="navbar-brand">ALL ABOUT TETRIS</a>
+        <a class="logo" href="index.html">ALL ABOUT TETRIS</a>
         <a href="music.html">Music</a>
-        <a class="active" href="tips_tricks.html">Tips and Tricks</a>
-        <a href="mechanics.html">Mechanics</a>
-        <a href="games.html">Games</a>
         <a href="timeline.html">Timeline</a>
-        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" class="active" onclick="dropDown()">Playing</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="mechanics.html">Mechanics</a>
+                <a href="tspin.html">T-Spin</a>
+                <a class="active" href="tips_tricks.html">Tips and Tricks</a>
+            </div>
+        </div>
+
+        <a href="games.html">Games</a>
     </div>
 
     <h1 class="orange">Tips and Tricks</h1>
+    <div class="tips_tricks_info">
+        <p>
+            There are infinitely many ways a Tetris game can play out. 
+            Here are some cemented techniques on getting that high score up.
+        </p>
+
+        <hr />
+
+        <h2>The Playing Field</h2>
+        <p>
+            The most important part of Tetris is organizing your blocks to make way for the next pieces in the queue.
+            Glancing at the NEXT queue often is something that is overlooked, as many players become overwhelmed with figuring
+            out where the current piece will go.
+        </p>
+
+        <p>
+            A <b>semi-flat</b> orientation is the sort of playing field to go for. Let's analyze a playing field:
+        </p>
+        <img src="images/playing-field.png" align="center" width="20%"/>
+
+        <p>
+            There's a few things to take in here. First, the player has arranged the blocks in such a way
+            that there is a single column left open to score Tetrises in using the straight-line piece.
+            This single column is usually called a "well." Since the well is on the right side, this type
+            of structure is called a "right well."  
+            Next, notice that the top blocks on the left are a bit jagged, yet it becomes smoother as it
+            progresses to the right. This is the semi-flatness of the field, and virtually any block, if
+            rotated correctly, can fit nicely in any of those spaces. 
+        </p>
+
+        <p>
+            Let's look at another.
+        </p>
+
+        <img src="images/playing-field-bad1.png" align="center" width="20%" />
+
+        <p>
+            Here's an example of a left well playing field that is too jagged. Pieces like the Z and S block can 
+            fit nicely in two of the spaces, but where is the box piece going to go? Well, one solution is
+            to place it on top of the orange and blue pieces, but it puts the player at risk of going
+            past the top of the board. 
+        </p>
+        <p>
+            Let's analyze one more.
+        </p>
+
+        <img src="images/playing-field-bad2.png" align="center" width="20%" />
+        <p>
+            Above is a very flat, center well playing field. In Tetris games using the <a href="mechanics.html#SRS">SRS</a>
+            this type of playing field can also be optimal due to lock delay, as players have the time to neatly tuck pieces under other
+            pieces if needed. However, since the NRS has very little lock delay, it makes this technique harder on higher
+            levels with faster speeds for games with this system. In the example above, the red piece on top cannot be hard dropped anywhere without 
+            forming a gap (but it can form a hole suitable for a <a href="tspin.html">T-Spin</a>).
+        </p>
+
     <hr />
+    <h2>Piece Burning</h2>
+    <p>
+        Not all the time will the playing field be neat. But to keep it as neat as possible, piece burning is a great way
+        to ensure your playing field doesn't get too high or the well you've made doesn't get blocked. 
+    </p>
+
+    <p>
+        Take a look at this video.
+    </p>
+
+    <center>
+        <video width="480" height="320" controls>
+            <source src="mp4/burn.mp4" type="video/mp4">
+            Your browser does not support the <code>video</code> element.
+        </video>
+    </center>
+
+    <p>
+        In this case, the red Z-block was "burned," or used to level out the right side of the tower. Burning 
+        is especially useful in games with the NRS, since, as stated before, tucking is a usually difficult move
+        to perform with said system.
+    </p>
+    
+    <hr />
+
+    <h2>Six-Three</h2>
+    <img src="images/six-and-three.png" />
+
+    <p>
+        This is my and a lot of other experienced players' preferred field. With a six-three, there is 
+        a well set in the seventh column from the left, but it may also periodically serve as a T-spin gap.
+        Due to the majority of blocks being three wide, holding right until the piece touches the wall
+        whenever such a block is given makes this stacking method very quick.
+        The right side is usually filled with L, J, and the box blocks, with the box blocks nestling inside
+        the gaps the L and J blocks have.
+    </p>
+
+    </div>
+
 
     <a href="#top" class="top" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Jump to top</a>
 

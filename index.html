@@ -11,14 +11,23 @@
 </head>
 
 <body>
+    <script src="dropdown.js"></script>
+
     <div class="topnav">
-        <a class="navbar-brand">ALL ABOUT TETRIS</a>
+        <a class="logo" href="index.html">ALL ABOUT TETRIS</a>
         <a href="music.html">Music</a>
-        <a href="tips_tricks.html">Tips and Tricks</a>
-        <a href="mechanics.html">Mechanics</a>
-        <a href="games.html">Games</a>
         <a href="timeline.html">Timeline</a>
-        <a class="active" href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropDown()">Playing</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="mechanics.html">Mechanics</a>
+                <a href="tspin.html">T-Spin</a>
+                <a href="tips_tricks.html">Tips and Tricks</a>
+            </div>
+        </div>
+
+        <a href="games.html">Games</a>
     </div>
 
     <h1 class="lightblue">What is <i>Tetris?</i></h1>
@@ -42,6 +51,8 @@
         apply the mechanics of Tetris in the real world, such as placing boxes on shelves in a certain way.  
     </p>
 
+    <h2>Where Can I Play?</h2>
+
     <p>
         &emsp;
         &emsp;
@@ -50,6 +61,10 @@
         you can sign up at <a href="https://tetr.io/">TETR.IO</a> or play anonymously at <a href="https://jstris.jezevec10.com/">Jstris</a>. 
     </p>
     </div>
+
+    <hr />
+
+    
 
     <a href="#top" class="top" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">Jump to top</a>
 

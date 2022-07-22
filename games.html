@@ -11,14 +11,23 @@
 </head>
 
 <body>
+    <script src="dropdown.js"></script>
+
     <div class="topnav">
-        <a class="navbar-brand">ALL ABOUT TETRIS</a>
+        <a class="logo" href="index.html">ALL ABOUT TETRIS</a>
         <a href="music.html">Music</a>
-        <a href="tips_tricks.html">Tips and Tricks</a>
-        <a href="mechanics.html">Mechanics</a>
-        <a class="active" href="games.html">Games</a>
         <a href="timeline.html">Timeline</a>
-        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropDown()">Playing</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="mechanics.html">Mechanics</a>
+                <a href="tspin.html">T-Spin</a>
+                <a href="tips_tricks.html">Tips and Tricks</a>
+            </div>
+        </div>
+
+        <a class="active" href="games.html">Games</a>
     </div>
 
     <h1 class="yellow">Games</h1>

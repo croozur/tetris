@@ -35,6 +35,12 @@ strong
     font-size: 1.20em;
 }
 
+aside
+{
+    font-family: SFPro;
+    text-align: center;
+}
+
 .lightblue
 {
     background-color: rgb(170, 217, 247);
@@ -52,9 +58,14 @@ strong
     background-color: rgb(253, 253, 179);
 }
 
+.blue
+{
+    background-color: rgb(112, 115, 255);
+}
+
 .purple
 {
-    background-color: rgba(255, 129, 255, 0.993);
+    background-color: rgb(255, 112, 255);
 }
 
 .green
@@ -79,6 +90,12 @@ img
     text-align: center;
     display: block;
     margin: auto;
+}
+
+.tspin
+{
+    font-family: SFPro;
+    text-align: center;
 }
 
 .noborder
@@ -117,7 +134,7 @@ img
     font-size: 17px;
 }
 
-.topnav a:hover
+.topnav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus
 {
     background-color: rgba(221, 214, 214, 0.945);
     color: black;
@@ -129,14 +146,59 @@ img
     color: white;
 }
 
-.navbar-brand .topnav
+.topnav .logo
 {
+    font-family: PressStart2P;
     float: left;
-    padding-top: 0.29375rem;
-    padding-bottom: 0.29375rem;
-    font-size: calc(1.2625rem + 0.15vw);
+    word-spacing: 2px;
+    padding: 13px;
+}
+
+.dropdown
+{
+    float: right;
+    font-family: SFPro;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color:#f2f2f2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
     text-decoration: none;
-    white-space: nowrap;
+    display: block;
+    text-align: left;
+}
+
+.show
+{
+    display: block;
 }
 
 .timeline_info h2
@@ -154,16 +216,7 @@ img
     text-align: justify;
 }
 
-.timeline_info
-{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em;
-    text-align: center;
-    text-justify: inter-word;
-}
-
-.info
+.info, .music_info, .timeline_info, .mech_info, .tspin_info, .tips_tricks_info
 {
     margin-left: auto;
     margin-right: auto;
@@ -173,32 +226,47 @@ img
     line-height: 1.5;
 }
 
-.info p
+.info p, .mechanics p
 {
     padding: 10px;
-    border-left: 6px solid lightskyblue;
+    border-left: 4px solid lightskyblue;
 }
 
-.music_info
+
+.tspin_info li
 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50em;
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.5;
+    font-family: SFPro;
+    line-height: 1.75;
+}
+
+.mech_info p
+{
+    padding: 10px;
+    border-left: 4px solid rgb(133, 241, 133);
 }
 
 .music_info p
 {
     padding: 10px;
-    border-left: 6px solid rgb(214, 2, 214);
+    border-left: 4px solid rgb(34, 93, 255);
+}
+
+.tspin_info p
+{
+    padding: 10px;
+    border-left: 4px solid rgb(255, 112, 255);
+}
+
+.tips_tricks_info p
+{
+    padding: 10px;
+    border-left: 4px solid rgb(252, 173, 26);
 }
 
 figcaption
 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-family: SFPro;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -278,11 +346,6 @@ html, body
     list-style-type: none;
 }
 
-.mechanics li
-{
-    text-align: center;
-}
-
 td
 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -299,8 +362,9 @@ th
 
 hr
 {
+    width: 600px;
     border: none;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(to right,rgba(0,90,156,.25) 0,rgba(76,183,72,.5) 50%,rgba(238,32,46,.25) 100%);
 }
 

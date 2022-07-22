@@ -11,29 +11,102 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="navbar-brand">ALL ABOUT TETRIS</a>
-        <a class="active" href="music.html">Music</a>
-        <a href="tips_tricks.html">Tips and Tricks</a>
-        <a href="mechanics.html">Mechanics</a>
-        <a href="games.html">Games</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="index.html">Home</a>
-    </div> 
+    <script src="dropdown.js"></script>
 
-    <h1 class="purple">Music</h1>
+    <div class="topnav">
+        <a class="logo" href="index.html">ALL ABOUT TETRIS</a>
+        <a class="active" href="music.html">Music</a>
+        <a href="timeline.html">Timeline</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropDown()">Playing</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="mechanics.html">Mechanics</a>
+                <a href="tspin.html">T-Spin</a>
+                <a href="tips_tricks.html">Tips and Tricks</a>
+            </div>
+        </div>
+
+        <a href="games.html">Games</a>
+    </div>
+
+    <h1 class="blue">Music</h1>
+    <p align="center">Tetris has an abundance of soundtracks. We'll look at the most popular ones, namely those from the Game Boy and NES.</p>
+    <hr />
     <h2>Origin</h2>
     <div class="music_info">
         <p>
-            The main <i>Tetris</i> theme is a traditional Russian folk song called <i>Korobeiniki</i>, or
-            "peddlers" in Russian, which was originally a poem written by Nikolay Nekrasov. 
+            The main <i>Tetris</i> theme is the instrumental version of the traditional Russian folk song <i>Korobeiniki</i>, or
+            "peddlers" in Russian, which was originally a poem written by Nikolay Nekrasov. Below are the songs:
         </p>
-        <table>
+        <table align="center">
             <tr>
                 <td>
+                    <figure>
+                        <figcaption>Tetris: Type A (Game Boy)</figcaption>
+                        <audio controls src="mp3/gb_theme.mp3">Your browser does not support the <code>audio</code> element.</audio>
+                    </figure>
+                    <audio></audio>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <figure>
+                        <figcaption><i>Korobeiniki</i></figcaption>
+                        <audio controls src="mp3/korobeiniki.mp3">Your browser does not support the <code>audio</code> element.</audio>
+                    </figure>
+                </td>   
+            </tr>
         </table>
+        <p>
+            Tetris: Type A has been remixed many times throughout the many iterations of the game, and has exacted its place in being
+            the franchise's main theme.
+        </p>
+        <hr />
+        <h2>Nintendo Composition</h2>
+        <p>
+            In both the Game Boy and NES games, Nintendo released an original composition to go with one of the alternate game modes.
+        </p>
+
+        <figure align="center">
+            <figcaption>Tetris: Type B (Game Boy/NES)</figcaption>
+            <audio controls src="mp3/type_b.mp3">Your browser does not support the <code>audio</code> element.</audio>
+        </figure>
+        <hr />
+        <h2>Other</h2>
+        <p>
+            The NES version had a different Type A theme, yet it is very recognizable. Can you guess what it is?
+        </p>
+
+        <figure align="center">
+            <figcaption>Tetris: Type A (NES)</figcaption>
+            <audio controls src="mp3/nes-type-a.mp3">Your browser does not support the <code>audio</code> element.</audio>
+        </figure>
+
+        <p>
+            The two games also had a Type C game. On the Game Boy, Type C is an arranged version of Bach's "French Suite No. 3" in F# Minor.
+            Type C on the NES seems to also be an original composition by Nintendo.
+        </p>
+
+        <table align="center">
+            <tr>
+                <td>
+                    <figure>
+                        <figcaption>Tetris: Type C (Game Boy)</figcaption>
+                        <audio controls src="mp3/gb_theme_c.mp3">Your browser does not support the <code>audio</code> element.</audio>
+                    </figure>
+                </td>
+                <td>
+                    <figure>
+                        <figcaption>Tetris: Type C (NES)</figcaption>
+                        <audio controls src="mp3/nes-type-c.mp3">Your browser does not support the <code>audio</code> element.</audio>
+                    </figure>
+                </td>
+            </tr>
+            
+        </table>
+        
+
     </div>
     <hr />
 

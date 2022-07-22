@@ -11,14 +11,23 @@
 </head>
 
 <body>
+    <script src="dropdown.js"></script>
+
     <div class="topnav">
-        <a class="navbar-brand">ALL ABOUT TETRIS</a>
+        <a class="logo" href="index.html">ALL ABOUT TETRIS</a>
         <a href="music.html">Music</a>
-        <a href="tips_tricks.html">Tips and Tricks</a>
-        <a href="mechanics.html">Mechanics</a>
-        <a href="games.html">Games</a>
         <a class="active" href="timeline.html">Timeline</a>
-        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="dropDown()">Playing</button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="mechanics.html">Mechanics</a>
+                <a href="tspin.html">T-Spin</a>
+                <a href="tips_tricks.html">Tips and Tricks</a>
+            </div>
+        </div>
+
+        <a href="games.html">Games</a>
     </div>
 
     <h1 class="red">Timeline</h1>
@@ -167,7 +176,9 @@
             <i>Tetris Effect</i> launches for the PlayStation 4 and PlayStationVR, earning more than 60 "Best of 2018" and "Game of the Year" honors.
         </p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Q1C7OvDII8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Q1C7OvDII8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
 
         <h2>2020</h2>
         <p>Apple announces <i>Tetris: The Movie</i>, a story about the legal rights for Tetris and the controversy surrounding it during the 1980s and 1990s.</p>
